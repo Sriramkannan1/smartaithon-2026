@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Learn about SmartAIthon 2026 - IEEE Smart Cities AI Hackathon. Discover our mission, vision, and the problems we're solving with AI.">
+    <meta name="keywords" content="About SmartAIthon, IEEE Smart Cities, AI Hackathon, Urban Innovation, Smart Cities">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About SmartAIthon 2026">
+    <meta property="og:description" content="Learn about our mission to solve urban challenges with AI innovation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/about.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Navbar Stylesheet -->
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        /* Logo Ribbon — static, fully visible */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        .nav-menu-container {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .nav-link:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1002;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background:
+                linear-gradient(135deg, rgba(0, 98, 155, 0.72), rgba(0, 206, 209, 0.65)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 760px;
+            width: 100%;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+
+        .hero-about-box {
+            margin-top: 24px;
+            background: #f1f5f9;
+            padding: 32px 40px;
+            border-radius: 20px;
+            max-width: 1100px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-about-box p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #334155;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .hero-about-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        .about-content {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--accent));
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            text-align: justify;
+        }
+
+        /* Problems Section */
+        .problems-section {
+            background: var(--light-gray);
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+            align-items: stretch;
+        }
+
+        /* Center second row cards */
+
+        .problems-grid .problem-card:nth-child(4) {
+            grid-column: 1 / 2;
+            justify-self: end;
+        }
+
+        .problems-grid .problem-card:nth-child(5) {
+            grid-column: 2 / 3;
+            justify-self: start;
+        }
+
+        .problem-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .problem-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.05), rgba(0, 206, 209, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .problem-card:hover::before {
+            opacity: 1;
+        }
+
+        .problem-card:hover {
+            box-shadow: 0 20px 50px rgba(0, 98, 155, 0.15);
+        }
+
+        .problem-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .problem-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .problem-description {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Focus Section */
+        .focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .focus-card {
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.1), rgba(0, 206, 209, 0.1));
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            height: 100%;
+        }
+
+        .focus-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 15px 40px rgba(0, 206, 209, 0.15);
+        }
+
+        .focus-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .focus-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .focus-description {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Opportunities Section */
+        .opportunities-section {
+            background: var(--light-gray);
+        }
+
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .opportunity-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .opportunity-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .opportunity-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .opportunity-card:hover {
+            box-shadow: 0 15px 40px rgba(0, 98, 155, 0.15);
+        }
+
+        .opportunity-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .opportunity-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .opportunity-description {
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 80px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            box-shadow: 0 5px 15px rgba(0, 98, 155, 0.3);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 8px 25px rgba(0, 98, 155, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        section {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* ABOUT COUNTDOWN SECTION */
+
+        .about-countdown-section {
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #00629B, #00CED1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-countdown-content {
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+
+        .about-countdown-title {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .about-countdown-line {
+            width: 110px;
+            height: 5px;
+            background: #25f4ee;
+            margin: 0 auto 50px;
+            border-radius: 20px;
+        }
+
+        .about-countdown-timer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .about-countdown-item {
+            background: rgba(255, 255, 255, 0.16);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 35px 15px;
+            min-height: 180px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            transition: 0.3s ease;
+        }
+
+        .about-countdown-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.22);
+        }
+
+        .about-countdown-item span {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 14px;
+        }
+
+        .about-countdown-item p {
+            font-size: 1rem;
+            font-weight: 600;
+            opacity: 0.95;
+        }
+
+        /* MOBILE VIEW */
+
+        @media (max-width:768px) {
+
+            .about-countdown-section {
+                padding: 70px 14px;
+            }
+
+            .about-countdown-title {
+                font-size: 2.8rem;
+            }
+
+            .about-countdown-timer {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            .about-countdown-item {
+                min-height: 110px;
+                padding: 18px 6px;
+                border-radius: 14px;
+            }
+
+            .about-countdown-item span {
+                font-size: 2.2rem;
+                margin-bottom: 8px;
+            }
+
+            .about-countdown-item p {
+                font-size: 0.72rem;
+            }
+
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 135px;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(8px);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 20px;
+                z-index: 999;
+                display: none;
+                border-top: 1px solid rgba(0, 0, 0, 0.06);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .logo-section {
+                gap: 5px;
+            }
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-item:nth-child(1),
+            .logo-item:nth-child(2),
+            .logo-item:nth-child(3),
+            .logo-item:nth-child(4),
+            .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-item:nth-child(6),
+            .logo-item:nth-child(7),
+            .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+
+
+            .hero-about-box {
+                padding: 30px 24px;
+                border-radius: 24px;
+            }
+
+            .hero-about-box p {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                white-space: normal;
+            }
+
+            .hero-content {
+                padding: 0 10px;
+            }
+
+            .hero-about-box {
+                margin-top: 25px;
+            }
+
+            .about-content {
+                padding: 30px 20px;
+            }
+
+            .hero {
+                padding: 155px 16px 30px;
+                min-height: auto;
+            }
+
+
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        .problems-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .problems-grid .problem-card:nth-child(4),
+        .problems-grid .problem-card:nth-child(5) {
+            grid-column: auto;
+            justify-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+
+                <!-- Original Set -->
+
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item"
+                    aria-label="Open IEEE official website">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="_blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+
+                <!-- ULockAI Logo Added -->
+
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguOL9StI253GqGZ1OnygN_1p40OzbRRYigfDyZvdtIJhmEuqrb8Skxz9o7tAWP5vrJZLaxkcz9bLju7oVwLNIJGcUaGn9gJUYtgBAni4uT_H8a-1ShgumdaxIGocLVcFKHDf1Yz2jffRZjTnmaMR81SRICeOjbC_zM_K_MNRhLxoOMfKif-n3yh5pelUM/s16000/Screenshot%202026-05-25%20114624.png"
+                        alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About</a></li>
+                    <li><a href="themes.html" class="nav-link">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-btn">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About SmartAIthon 2026</h1>
+
+            <div class="hero-about-box">
+
+                <p>
+                    The AI for Smart & Sustainable Cities Hackathon 2026 is a multi-stage innovation challenge designed
+                    to bring together students, developers, and innovators to solve real-world urban problems using
+                    Artificial Intelligence and emerging technologies.
+                </p>
+
+                <p>
+                    Participants will identify pressing challenges in areas such as traffic management, pollution
+                    monitoring, waste management, urban safety, and disaster prediction while developing innovative and
+                    scalable AI-driven solutions.
+                </p>
+
+                <p>
+                    The hackathon focuses on creativity, technical implementation, real-world impact, and scalability,
+                    encouraging participants to transform innovative ideas into practical solutions for smarter and more
+                    sustainable cities.
+                </p>
+
+                <p>
+                    This event provides an opportunity to showcase innovation, gain recognition, collaborate with
+                    talented participants, and build impactful AI solutions capable of addressing real urban challenges.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Problems Section -->
+        <section class="section problems-section reveal">
+            <div class="container">
+                <h2 class="section-title">Problems We Address</h2>
+                <p class="section-subtitle">Tackling the most pressing urban challenges with AI-powered solutions</p>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">🚦</div>
+                        <h3 class="problem-title">Traffic Management</h3>
+                        <p class="problem-description">Develop intelligent traffic flow optimization systems to reduce
+                            congestion, minimize commute times, and enhance road safety through real-time data analysis
+                            and predictive algorithms.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🌍</div>
+                        <h3 class="problem-title">Pollution Monitoring</h3>
+                        <p class="problem-description">Create AI-driven environmental monitoring solutions to track air
+                            quality, detect pollution sources, and provide actionable insights for cleaner urban
+                            environments.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">♻️</div>
+                        <h3 class="problem-title">Waste Management</h3>
+                        <p class="problem-description">Innovate smart waste collection and recycling systems using IoT
+                            sensors and machine learning to optimize routes, reduce costs, and improve sustainability.
+                        </p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🚨</div>
+                        <h3 class="problem-title">Disaster Prediction</h3>
+                        <p class="problem-description">Build early warning systems and predictive models to anticipate
+                            natural disasters, enabling timely evacuations and emergency response coordination.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">🛡️</div>
+                        <h3 class="problem-title">Urban Safety</h3>
+                        <p class="problem-description">Design intelligent surveillance and emergency response systems to
+                            enhance public safety, detect potential threats, and improve law enforcement efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HACKATHON COUNTDOWN SECTION -->
+        <section class="about-countdown-section" id="aboutCountdownSection">
+
+            <div class="about-countdown-content">
+
+                <h2 class="about-countdown-title">
+                    Final Presentation<br>Starts In
+                </h2>
+
+                <div class="about-countdown-line"></div>
+
+                <div class="about-countdown-timer">
+
+                    <div class="about-countdown-item">
+                        <span id="aboutDays">00</span>
+                        <p>DAYS</p>
+                    </div>
+
+                    <div class="about-countdown-item">
+                        <span id="aboutHours">00</span>
+                        <p>HOURS</p>
+                    </div>
+
+                    <div class="about-countdown-item">
+                        <span id="aboutMinutes">00</span>
+                        <p>MINUTES</p>
+                    </div>
+
+                    <div class="about-countdown-item">
+                        <span id="aboutSeconds">00</span>
+                        <p>SECONDS</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <script>
+            if (new Date().getTime() >= new Date("2026-08-23T10:00:00+05:30").getTime()) {
+                var el = document.getElementById("aboutCountdownSection");
+                if (el) el.style.display = "none";
+            }
+        </script>
+
+        <!-- Focus Section -->
+        <section class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Hackathon Focus Areas</h2>
+                <p class="section-subtitle">What we value and look for in innovative solutions</p>
+                <div class="focus-grid">
+                    <div class="focus-card">
+                        <div class="focus-icon">💡</div>
+                        <h3 class="focus-title">Creativity</h3>
+                        <p class="focus-description">We encourage out-of-the-box thinking and novel approaches to
+                            solving complex urban challenges through creative AI applications.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">⚙️</div>
+                        <h3 class="focus-title">Technical Implementation</h3>
+                        <p class="focus-description">Strong emphasis on robust, scalable, and efficient technical
+                            solutions that demonstrate advanced AI and machine learning capabilities.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">🌟</div>
+                        <h3 class="focus-title">Real-World Impact</h3>
+                        <p class="focus-description">Solutions should address genuine urban problems with measurable
+                            benefits and potential for practical implementation in cities.</p>
+                    </div>
+                    <div class="focus-card">
+                        <div class="focus-icon">📈</div>
+                        <h3 class="focus-title">Scalability</h3>
+                        <p class="focus-description">Projects should be designed with scalability in mind, capable of
+                            expanding from prototype to city-wide deployment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section reveal">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Our Impact</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="540">0</div>
+                        <div class="stat-label">Teams Registered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="80">0</div>
+                        <div class="stat-label">Teams Shortlisted for Round 2</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Problem Domains</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Prize Pool (₹)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">
+                                IEEE Smart Cities
+                            </a></li>
+                    </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://featherless.ai/" target="_blank">
+                            Featherless
+                        </a>
+                    </li>
+                </ul>
+                <h3>Community Partner</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://ulockai.netlify.app/" target="_blank">
+                            ULockAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eventopia.in/" target="_blank">
+                            Eventopia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function () {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Clear any stored theme data
+        localStorage.removeItem('theme');
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+        let aboutCountdownInterval = null;
+
+        function updateAboutCountdown() {
+            const targetDate = new Date("2026-08-23T10:00:00+05:30").getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+            const section = document.getElementById("aboutCountdownSection");
+
+            if (distance <= 0) {
+                if (section) section.style.display = "none";
+                if (aboutCountdownInterval) {
+                    clearInterval(aboutCountdownInterval);
+                    aboutCountdownInterval = null;
+                }
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const daysEl = document.getElementById("aboutDays");
+            const hoursEl = document.getElementById("aboutHours");
+            const minsEl = document.getElementById("aboutMinutes");
+            const secsEl = document.getElementById("aboutSeconds");
+
+            if (daysEl) daysEl.innerText = String(days).padStart(2, '0');
+            if (hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
+            if (minsEl) minsEl.innerText = String(minutes).padStart(2, '0');
+            if (secsEl) secsEl.innerText = String(seconds).padStart(2, '0');
+        }
+
+        updateAboutCountdown();
+        if (new Date().getTime() < new Date("2026-08-23T10:00:00+05:30").getTime()) {
+            aboutCountdownInterval = setInterval(updateAboutCountdown, 1000);
+        }
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal, { passive: true });
+        reveal();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated Counter
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current).toLocaleString() + (target === 540 ? '+' : '');
+            }, 20);
+        }
+
+        // Initialize counters when visible
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    animateCounter(counter, target);
+                    counterObserver.unobserve(counter);
+                }
+            });
+        });
+
+        // Observe all counter elements
+        document.querySelectorAll('.stat-number').forEach(counter => {
+            counterObserver.observe(counter);
+        });
+    </script>
+    <!-- Shared Navbar Script -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Contact SmartAIthon 2026 organizing team. Get in touch for questions, support, or collaboration opportunities.">
+    <meta name="keywords" content="SmartAIthon contact, IEEE KCE contact, hackathon support, event coordination">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact - SmartAIthon 2026">
+    <meta property="og:description" content="Get in touch with the SmartAIthon 2026 team">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/contact.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Navbar Stylesheet -->
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Logo Ribbon — static, fully visible */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.9), rgba(0, 206, 209, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 760px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 98, 155, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .contact-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .contact-description {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .contact-button:hover::before {
+            left: 100%;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 98, 155, 0.4);
+        }
+
+        /* Contact Form Section */
+        .form-section {
+            background: var(--light-gray);
+        }
+
+        .contact-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--light-gray);
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 206, 209, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+            font-family: inherit;
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .form-submit::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .form-submit:hover::before {
+            left: 100%;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 98, 155, 0.4);
+        }
+
+        .form-submit:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 0;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.1), rgba(0, 206, 209, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .map-content {
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .map-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .map-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .map-subtitle {
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+
+        /* Success Message */
+        .success-message {
+            background: var(--success);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: none;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .error-message {
+            background: var(--danger);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: none;
+            animation: slideDown 0.5s ease-out;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        /* Loading Spinner */
+        .spinner {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        .form-submit.loading .spinner {
+            display: inline-block;
+        }
+
+        .form-submit.loading .button-text {
+            display: none;
+        }
+    </style>
+
+    <style>
+        @media (max-width: 768px) {
+
+            /* Mobile Navbar */
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 118px;
+                left: -100%;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                gap: 20px;
+                padding: 30px 0;
+                transition: left 0.3s ease;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            /* Contact Cards Mobile */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            /* Mobile Adjustments */
+            .hero {
+                padding: 155px 16px 30px;
+                min-height: auto;
+            }
+
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .contact-form {
+                padding: 30px 20px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-item:nth-child(1),
+            .logo-item:nth-child(2),
+            .logo-item:nth-child(3),
+            .logo-item:nth-child(4),
+            .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-item:nth-child(6),
+            .logo-item:nth-child(7),
+            .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+
+                <!-- Original Set -->
+
+                <!-- Original Set -->
+
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item"
+                    aria-label="Open IEEE official website">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+
+                <!-- ULockAI Logo Added -->
+
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguOL9StI253GqGZ1OnygN_1p40OzbRRYigfDyZvdtIJhmEuqrb8Skxz9o7tAWP5vrJZLaxkcz9bLju7oVwLNIJGcUaGn9gJUYtgBAni4uT_H8a-1ShgumdaxIGocLVcFKHDf1Yz2jffRZjTnmaMR81SRICeOjbC_zM_K_MNRhLxoOMfKif-n3yh5pelUM/s16000/Screenshot%202026-05-25%20114624.png"
+                        alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="themes.html" class="nav-link">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-btn">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the SmartAIthon 2026 team for any questions or support</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Methods -->
+        <section class="section reveal">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Reach out to us through any of the following channels</p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-description">
+                            Send us an email for any queries, support, or collaboration opportunities. We'll respond
+                            within 24 hours.
+                        </p>
+                        <a href="mailto:smartaithon@gmail.com" class="contact-button">
+                            Send Email
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+
+                        <h3 class="contact-title">WhatsApp</h3>
+
+                        <p class="contact-description">
+                            Join our official WhatsApp community for announcements, deadline reminders, participant
+                            support, and event updates.
+                        </p>
+
+                        <a href="https://chat.whatsapp.com/DFZIsb0ZVJNIqioGyaKxKA" target="_blank"
+                            class="contact-button">
+                            Join WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🚀</div>
+
+                        <h3 class="contact-title">Unstop</h3>
+
+                        <p class="contact-description">
+                            Access SmartAIthon updates, registrations, announcements, and competition resources through
+                            our official Unstop page.
+                        </p>
+
+                        <a href="https://unstop.com/p/smartaithon-2026-campus-ambassador-program-httpsbitlysmartaithon-ieee-kce-student-branch-cis-chapter-1687351"
+                            target="_blank" class="contact-button">
+                            Visit Unstop
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="section form-section reveal">
+            <div class="container">
+                <h2 class="section-title">Send us a Message</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you soon</p>
+
+                <form class="contact-form" action="https://formsubmit.co/smartaithon@gmail.com" method="POST"
+                    id="contactForm">
+                    <div id="successMessage" class="success-message">
+                        ✅ Your message has been sent successfully! We'll get back to you soon.
+                    </div>
+                    <div id="errorMessage" class="error-message">
+                        ❌ There was an error sending your message. Please try again.
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required
+                                placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="your.email@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <input type="text" id="subject" name="subject" class="form-input" required
+                            placeholder="How can we help you?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" required
+                            placeholder="Tell us more about your query..."></textarea>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+
+                    <button type="submit" class="form-submit" id="submitBtn">
+                        <span class="button-text">Send Message</span>
+                        <div class="spinner"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section reveal">
+            <iframe src="https://www.google.com/maps?q=Karpagam+College+of+Engineering&output=embed" width="100%"
+                height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">
+                                IEEE Smart Cities
+                            </a></li>
+                    </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://featherless.ai/" target="_blank">
+                            Featherless
+                        </a>
+                    </li>
+                </ul>
+                <h3>Community Partner</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://ulockai.netlify.app/" target="_blank">
+                            ULockAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eventopia.in/" target="_blank">
+                            Eventopia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function () {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Clear any stored theme data
+        localStorage.removeItem('theme');
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal, { passive: true });
+        reveal();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+        function showSuccess(message) {
+            successMessage.textContent = '✅ ' + message;
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+        }
+
+        function showError(message) {
+            errorMessage.textContent = '❌ ' + message;
+            errorMessage.style.display = 'block';
+            successMessage.style.display = 'none';
+        }
+
+        function hideMessages() {
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'none';
+        }
+
+        // WhatsApp Info
+        function showWhatsAppInfo() {
+            // Remove existing popup
+            const existingPopup = document.querySelector('.custom-popup');
+            if (existingPopup) {
+                existingPopup.remove();
+            }
+
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(135deg, #25D366, #128C7E);
+                color: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                max-width: 400px;
+                text-align: center;
+                animation: fadeInUp 0.5s ease-out;
+            `;
+
+            notification.innerHTML = `
+                <h3 style="margin-bottom: 15px; font-size: 1.3rem;">📱 WhatsApp Community</h3>
+                <p style="margin-bottom: 20px;">Join our WhatsApp community for updates and support:</p>
+                <p style="font-weight: 600; margin-bottom: 20px;">+91 XXXXX XXXXXX</p>
+                <p style="opacity: 0.9; font-size: 0.9rem;">Click anywhere to close</p>
+            `;
+
+            notification.classList.add('custom-popup');
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.addEventListener('click', function () {
+                    notification.style.opacity = '0';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                });
+            }, 100);
+        }
+
+        // Unstop Info
+        function showUnstopInfo() {
+            // Remove existing popup
+            const existingPopup = document.querySelector('.custom-popup');
+            if (existingPopup) {
+                existingPopup.remove();
+            }
+
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                max-width: 400px;
+                text-align: center;
+                animation: fadeInUp 0.5s ease-out;
+            `;
+
+            notification.innerHTML = `
+                <h3 style="margin-bottom: 15px; font-size: 1.3rem;">🚀 Unstop Platform</h3>
+                <p style="margin-bottom: 20px;">Visit our Unstop page for:</p>
+                <ul style="text-align: left; margin-bottom: 20px; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;">Event registration</li>
+                    <li style="margin-bottom: 10px;">Resources & materials</li>
+                    <li style="margin-bottom: 10px;">Community discussions</li>
+                    <li>Updates & announcements</li>
+                </ul>
+                <p style="opacity: 0.9; font-size: 0.9rem;">Click anywhere to close</p>
+            `;
+
+            notification.classList.add('custom-popup');
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.addEventListener('click', function () {
+                    notification.style.opacity = '0';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                });
+            }, 100);
+        }
+
+        // Add hover effects to contact cards
+        const contactCards = document.querySelectorAll('.contact-card');
+        contactCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.contact-card, .contact-form').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(element);
+        });
+
+        // Form input animations
+        const formInputs = document.querySelectorAll('.form-input, .form-textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function () {
+                this.style.transform = 'scale(1.01)';
+            });
+
+            input.addEventListener('blur', function () {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+    </script>
+    <!-- Shared Navbar Script -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>

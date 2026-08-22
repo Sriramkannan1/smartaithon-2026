@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Register for SmartAIthon 2026 - IEEE Smart Cities AI Hackathon. Join the ultimate AI innovation challenge and win prizes worth ₹15,000.">
+    <meta name="keywords"
+        content="SmartAIthon registration, IEEE hackathon, AI competition, smart cities, register now">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Register Now - SmartAIthon 2026">
+    <meta property="og:description" content="Register for the ultimate AI hackathon experience">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/register.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Navbar Stylesheet -->
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Logo Ribbon — static, fully visible */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .nav-link:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.9), rgba(0, 206, 209, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .hero-timer {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 0;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+
+        .timer-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .timer-value {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .timer-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .timer-value {
+            transition: transform .2s ease;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* Registration Status */
+        .status-section {
+            background: var(--light-gray);
+            padding: 40px 0;
+        }
+
+        .status-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(26, 54, 93, 0.35);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .status-text {
+            font-size: 1.1rem;
+            color: var(--text);
+            margin-bottom: 30px;
+        }
+
+        /* Registration Fees */
+        .fees-section {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .fees-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .fees-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .stage-title {
+            font-size: 2rem;
+            color: var(--primary);
+            text-align: center;
+            margin: 50px 0 25px;
+            font-weight: 700;
+        }
+
+        .stage-title:first-of-type {
+            margin-top: 20px;
+        }
+
+        .stage-single-card {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .stage-single-card .fee-card {
+            max-width: 320px;
+            width: 100%;
+        }
+
+        .stage-two-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        @media (max-width:900px) {
+            .stage-two-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .fee-card {
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.05), rgba(0, 206, 209, 0.05));
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .fee-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .fee-card:hover::before {
+            opacity: 0.1;
+        }
+
+        .fee-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 98, 155, 0.2);
+        }
+
+        .fee-category {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .fee-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+
+        .fee-description {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        .free-badge {
+            background: var(--success);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+
+
+        /* Benefits Section */
+        .benefits-section {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .benefits-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            width: 250px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 98, 155, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .benefit-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .benefit-description {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 135px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 135px);
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(8px);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 24px;
+                padding: 40px 20px;
+                transition: left .35s ease;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-track .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-track .logo-item:nth-child(1),
+            .logo-track .logo-item:nth-child(2),
+            .logo-track .logo-item:nth-child(3),
+            .logo-track .logo-item:nth-child(4),
+            .logo-track .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-track .logo-item:nth-child(6),
+            .logo-track .logo-item:nth-child(7),
+            .logo-track .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-track .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+
+            .nav-link {
+                font-size: 1.1rem;
+                padding: 10px 20px;
+                border-radius: 25px;
+            }
+
+            .nav-link:hover {
+                background: rgba(0, 98, 155, 0.1);
+                color: var(--primary);
+            }
+
+            .hero {
+                padding: 155px 16px 30px;
+                min-height: auto;
+            }
+
+            /* MOBILE TIMER FIX */
+            .hero-timer {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                width: 100%;
+                padding: 0 12px;
+                margin-top: 25px;
+            }
+
+            .timer-item {
+                padding: 12px 6px;
+                border-radius: 14px;
+                min-height: 90px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .timer-value {
+                font-size: 2rem;
+                line-height: 1;
+                margin-bottom: 6px;
+            }
+
+            .timer-label {
+                font-size: 0.78rem;
+                text-align: center;
+            }
+
+
+
+            .fees-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .giant-button {
+                padding: 20px 30px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            text-align: center;
+        }
+
+        .countdown-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            color: var(--dark-gray);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* Animated Background */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: particle-float 15s infinite linear;
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+
+                <!-- Original Set -->
+
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item"
+                    aria-label="Open IEEE official website">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+
+                <!-- ULockAI Logo Added -->
+
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguOL9StI253GqGZ1OnygN_1p40OzbRRYigfDyZvdtIJhmEuqrb8Skxz9o7tAWP5vrJZLaxkcz9bLju7oVwLNIJGcUaGn9gJUYtgBAni4uT_H8a-1ShgumdaxIGocLVcFKHDf1Yz2jffRZjTnmaMR81SRICeOjbC_zM_K_MNRhLxoOMfKif-n3yh5pelUM/s16000/Screenshot%202026-05-25%20114624.png"
+                        alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="themes.html" class="nav-link">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-btn active">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Register for SmartAIthon 2026</h1>
+            <p class="hero-subtitle">Join the ultimate AI hackathon experience and showcase your innovation</p>
+
+            <div class="status-badge">
+                🔥 540+ Teams Registered
+            </div>
+
+            <div class="hero-timer">
+                <div class="timer-item">
+                    <span class="timer-value" id="daysLeft">00</span>
+                    <span class="timer-label">Days Left</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-value" id="hoursLeft">00</span>
+                    <span class="timer-label">Hours</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-value" id="minutesLeft">00</span>
+                    <span class="timer-label">Minutes</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-value" id="secondsLeft">00</span>
+                    <span class="timer-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Registration Status -->
+        <section class="status-section reveal">
+            <div class="container">
+                <div class="status-container">
+                    <div class="status-badge">🚀 STAGE 1 REGISTRATION OPEN</div>
+                    <p class="status-text">
+                        Stage 1 (Registration & Idea Submission) is now open and completely FREE!
+                        Register your team and submit your innovative ideas to secure your spot in SmartAIthon 2026.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Fees -->
+        <section class="section fees-section reveal">
+            <div class="container">
+                <h2 class="section-title">Registration Fees</h2>
+                <p class="section-subtitle">Stage 1 is completely free. Nominal fees apply for subsequent stages</p>
+
+                <div class="fees-container">
+
+                    <!-- Stage 1 -->
+                    <h3 class="stage-title">Stage 1</h3>
+
+                    <div class="stage-single-card">
+                        <div class="fee-card">
+                            <div class="free-badge">✓ FREE</div>
+
+                            <h3 class="fee-category">Registration & Idea Submission</h3>
+
+                            <div class="fee-price">₹0</div>
+
+                            <p class="fee-description">
+                                Registration & Idea Submission is completely free for all participants. No hidden
+                                charges.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Stage 2 -->
+                    <h3 class="stage-title">Stage 2</h3>
+
+                    <div class="stage-two-grid">
+
+                        <div class="fee-card">
+                            <h3 class="fee-category">IEEE CIS / Smart Cities</h3>
+
+                            <div class="fee-price">₹150
+                                <span style="font-size:1.3rem; color:var(--secondary); font-weight:500;">
+                                    /team
+                                </span>
+                            </div>
+
+                            <p class="fee-description">
+                                Special discounted rate for IEEE CIS and IEEE Smart Cities members
+                            </p>
+                        </div>
+
+                        <div class="fee-card">
+                            <h3 class="fee-category">IEEE Members</h3>
+
+                            <div class="fee-price">₹180<span
+                                    style="font-size:1.3rem; color:var(--secondary); font-weight:500;">
+                                    /team
+                                </span></div>
+
+                            <p class="fee-description">
+                                Standard rate for all IEEE members from any society
+                            </p>
+                        </div>
+
+                        <div class="fee-card">
+                            <h3 class="fee-category">Non-IEEE Participants</h3>
+
+                            <div class="fee-price">₹200<span
+                                    style="font-size:1.3rem; color:var(--secondary); font-weight:500;">
+                                    /team
+                                </span></div>
+
+                            <p class="fee-description">
+                                Open rate for all non-IEEE participants and students
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Benefits Section -->
+        <section class="section benefits-section reveal">
+            <div class="container">
+                <h2 class="section-title">Why Participate?</h2>
+                <p class="section-subtitle">Unlock amazing opportunities and benefits by joining SmartAIthon 2026</p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h3 class="benefit-title">Win Exciting Prizes</h3>
+                        <p class="benefit-description">
+                            Compete for prizes worth ₹15,000 and gain recognition for your innovative solutions
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📜</div>
+                        <h3 class="benefit-title">Certificates</h3>
+                        <p class="benefit-description">
+                            Receive official certificates for participation and special recognition for winners
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🤝</div>
+                        <h3 class="benefit-title">Networking</h3>
+                        <p class="benefit-description">
+                            Connect with talented students, professionals, and industry experts
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💡</div>
+                        <h3 class="benefit-title">Innovation</h3>
+                        <p class="benefit-description">
+                            Showcase your creative ideas and innovative AI solutions for smart cities
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👨‍🏫</div>
+                        <h3 class="benefit-title">Mentorship</h3>
+                        <p class="benefit-description">
+                            Get guidance from industry experts and experienced professionals
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌟</div>
+                        <h3 class="benefit-title">Recognition</h3>
+                        <p class="benefit-description">
+                            Gain recognition in the IEEE community and tech industry
+                        </p>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🚀</div>
+                        <h3 class="benefit-title">Career Growth</h3>
+                        <p class="benefit-description">
+                            Enhance your skills and boost your career opportunities
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">
+                                IEEE Smart Cities
+                            </a></li>
+                    </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://featherless.ai/" target="_blank">
+                            Featherless
+                        </a>
+                    </li>
+                </ul>
+                <h3>Community Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://ulockai.netlify.app/" target="_blank">
+                            ULockAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eventopia.in/" target="_blank">
+                            Eventopia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function () {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Clear any stored theme data
+        localStorage.removeItem('theme');
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+
+        // Countdown Timer
+        function updateCountdown() {
+            const deadline = new Date('July 20, 2026 23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = deadline - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById('daysLeft').textContent = String(days).padStart(2, '0');
+                document.getElementById('hoursLeft').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutesLeft').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('secondsLeft').textContent = String(seconds).padStart(2, '0');
+            } else {
+                document.querySelector('.hero-timer').innerHTML = '<div class="status-badge">REGISTRATION CLOSED</div>';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Particle Background
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            particlesContainer.innerHTML = '';
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 10 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 15 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 15) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Add hover effects to cards
+        const cards = document.querySelectorAll('.fee-card, .benefit-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.status-container, .fee-card, .benefit-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(element);
+        });
+
+        // Add urgency animation to countdown
+        const countdownElements = document.querySelectorAll('.timer-value');
+        setInterval(() => {
+            countdownElements.forEach(element => {
+                element.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    element.style.transform = 'scale(1)';
+                }, 200);
+            });
+        }, 10000);
+
+    </script>
+    <!-- Shared Navbar Script -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentors & Judges - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Meet the technical mentors and distinguished judges of SmartAIthon 2026 - IEEE Smart Cities AI Hackathon. Our experts will guide and evaluate your submissions.">
+    <meta name="keywords"
+        content="SmartAIthon mentors, SmartAIthon judges, hackathon mentors, industry experts, IEEE KCE 2026">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mentors & Judges - SmartAIthon 2026">
+    <meta property="og:description" content="Meet the technical mentors and judging panel of SmartAIthon 2026">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/mentors.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65px;
+        }
+
+        /* Logo Ribbon */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.93), rgba(0, 206, 209, 0.93)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.08" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-bg-graphic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px),
+                radial-gradient(rgba(0, 206, 209, 0.25) 1.5px, transparent 1.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 860px;
+            animation: fadeInUp 0.9s ease-out;
+        }
+
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(2.3rem, 4.5vw, 3.4rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            letter-spacing: -0.5px;
+            line-height: 1.25;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.02rem, 1.8vw, 1.18rem);
+            line-height: 1.7;
+            margin-bottom: 28px;
+            opacity: 0.95;
+            font-weight: 400;
+            max-width: 780px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.32);
+            padding: 9px 24px;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            cursor: default;
+        }
+
+        .hero-badge:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.28);
+            border-color: rgba(255, 255, 255, 0.6);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+        }
+
+        .badge-icon {
+            font-size: 1.15rem;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* Announcement Banner */
+        .announcement-banner {
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.08), rgba(0, 206, 209, 0.08));
+            border: 1px solid rgba(0, 98, 155, 0.20);
+            border-left: 5px solid var(--primary);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+        }
+
+        .ann-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .ann-body {
+            flex: 1;
+        }
+
+        .ann-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .ann-text {
+            font-size: 0.97rem;
+            color: var(--dark-gray);
+            line-height: 1.75;
+        }
+
+        /* Judges Section & Grid */
+        .judges-section {
+            background: var(--light-gray);
+            padding: 80px 0;
+        }
+
+        .judges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1280px;
+            margin: 50px auto 0;
+            align-items: stretch;
+        }
+
+        /* Clean Speaker Profile Judge Card */
+        .judge-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 28px 12px 22px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            outline: none;
+        }
+
+        .judge-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.35s ease;
+        }
+
+        .judge-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0, 98, 155, 0.14);
+            border-color: rgba(0, 206, 209, 0.3);
+        }
+
+        .judge-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* 1. Large Circular Photo (140px dominant visual element) */
+        .judge-photo-wrapper {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            margin: 0 auto 18px;
+            flex-shrink: 0;
+            box-shadow: 0 8px 22px rgba(0, 98, 155, 0.16);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .judge-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            background: #ffffff;
+            display: block;
+        }
+
+        /* 2. Judge Name (Strict Single Line - 16px bold) */
+        .judge-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--secondary);
+            margin: 0 0 8px 0;
+            line-height: 1.3;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            letter-spacing: -0.2px;
+        }
+
+        /* 3. Designation (14.5px) */
+        .judge-designation {
+            font-size: 14.5px;
+            font-weight: 500;
+            color: var(--dark-gray);
+            margin: 0 0 8px 0;
+            line-height: 1.45;
+            text-align: center;
+        }
+
+        /* 4. Company / Institution (14px) */
+        .judge-company {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(0, 98, 155, 0.08);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0 0 18px 0;
+            line-height: 1.4;
+            letter-spacing: 0.2px;
+            text-align: center;
+        }
+
+        /* 5. Buttons Container (Aligned at bottom of equal height card) */
+        .judge-btns {
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 10px;
+        }
+
+        .judge-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 9px 20px;
+            border-radius: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13.5px;
+            font-weight: 600;
+            text-decoration: none !important;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .judge-btn-linkedin {
+            background: linear-gradient(135deg, #0077b5, #005582);
+            color: #ffffff !important;
+            box-shadow: 0 3px 12px rgba(0, 119, 181, 0.22);
+        }
+
+        .judge-card:hover .judge-btn-linkedin {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            box-shadow: 0 6px 18px rgba(0, 206, 209, 0.35);
+            transform: translateY(-2px);
+        }
+
+        .judge-btn-secondary {
+            background: #f1f5f9;
+            color: #334155 !important;
+            border: 1px solid #cbd5e1;
+            padding: 8px 14px;
+            font-size: 12.5px;
+        }
+
+        .judge-btn-secondary:hover {
+            background: #e2e8f0;
+            color: var(--primary) !important;
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Row (Panel at a Glance Redesign) */
+        .stats-section {
+            background: #f8fafc;
+            padding: 65px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1150px;
+            margin: 40px auto 0;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 98, 155, 0.08);
+            border-radius: 20px;
+            padding: 32px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(0, 206, 209, 0.4);
+            box-shadow: 0 18px 40px rgba(0, 98, 155, 0.12);
+            transform: translateY(-8px);
+        }
+
+        .stat-card:hover::before {
+            opacity: 1;
+        }
+
+        .stat-icon-wrapper {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.08), rgba(0, 206, 209, 0.12));
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover .stat-icon-wrapper {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #ffffff;
+            transform: scale(1.08);
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 6px;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--dark-gray);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content .buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Scroll Reveal */
+        .reveal {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 135px;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.98);
+                backdrop-filter: blur(8px);
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 20px;
+                z-index: 999;
+                display: none;
+                border-top: 1px solid rgba(0, 0, 0, 0.06);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-item:nth-child(1),
+            .logo-item:nth-child(2),
+            .logo-item:nth-child(3),
+            .logo-item:nth-child(4),
+            .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-item:nth-child(6),
+            .logo-item:nth-child(7),
+            .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 155px 16px 30px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 35px;
+            }
+
+
+            .announcement-banner {
+                flex-direction: column;
+                padding: 22px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .cta-description {
+                font-size: 1rem;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 0;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .judges-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 22px;
+            }
+
+            .judge-name {
+                font-size: 17px;
+            }
+        }
+
+        @media (max-width: 850px) {
+            .judges-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .judge-name {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 580px) {
+            .judges-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .judge-name {
+                font-size: 18px;
+            }
+        }
+
+        /* Technical Mentors Section */
+        .mentors-section {
+            background: #ffffff;
+        }
+
+        .mentors-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .mentor-card {
+            flex: 0 0 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            outline: none;
+        }
+
+        .mentor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            transform: scaleX(0);
+            transition: transform 0.35s ease;
+        }
+
+        .mentor-card:hover,
+        .mentor-card.active-card {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0, 98, 155, 0.14);
+            border-color: rgba(0, 206, 209, 0.3);
+        }
+
+        .mentor-card:hover::before,
+        .mentor-card.active-card::before {
+            transform: scaleX(1);
+        }
+
+        .mentor-card.active-card {
+            border: 2px solid var(--accent);
+        }
+
+        .mentor-photo-wrapper {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            margin-bottom: 20px;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(0, 98, 155, 0.15);
+        }
+
+        .mentor-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ffffff;
+            display: block;
+        }
+
+        .mentor-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 6px;
+            line-height: 1.3;
+        }
+
+        .mentor-designation {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--dark-gray);
+            margin-bottom: 8px;
+            line-height: 1.4;
+            min-height: 2.8em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mentor-company {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            background: rgba(0, 98, 155, 0.08);
+            padding: 5px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            letter-spacing: 0.3px;
+        }
+
+        .view-profile-btn {
+            margin-top: auto;
+            background: linear-gradient(135deg, var(--primary), #004d7a);
+            color: #ffffff !important;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 3px 10px rgba(0, 98, 155, 0.18);
+            text-decoration: none !important;
+        }
+
+        .view-profile-btn:hover,
+        .view-profile-btn:focus,
+        .view-profile-btn:visited,
+        .view-profile-btn:active {
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+
+        .mentor-card:hover .view-profile-btn,
+        .mentor-card.active-card .view-profile-btn {
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            box-shadow: 0 6px 18px rgba(0, 206, 209, 0.35);
+            transform: scale(1.03);
+            text-decoration: none !important;
+        }
+
+        .view-profile-btn svg {
+            transition: transform 0.3s ease;
+        }
+
+        .mentor-card:hover .view-profile-btn svg,
+        .mentor-card.active-card .view-profile-btn svg {
+            transform: translateX(3px);
+        }
+
+        /* Profile Panel */
+        .mentor-profile-wrapper {
+            margin-top: 45px;
+            width: 100%;
+        }
+
+        .mentor-profile-panel {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.09);
+            border: 1px solid rgba(0, 98, 155, 0.12);
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .mentor-profile-panel.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .profile-panel-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .panel-close-btn {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            color: var(--dark-gray);
+            font-size: 1.3rem;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+        }
+
+        .panel-close-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+            transform: rotate(90deg);
+        }
+
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            box-shadow: 0 10px 25px rgba(0, 98, 155, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .profile-name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 6px;
+        }
+
+        .profile-designation {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .profile-company {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--dark-gray);
+            margin-bottom: 8px;
+        }
+
+        .profile-location {
+            font-size: 0.9rem;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .profile-location svg {
+            color: var(--accent);
+        }
+
+        .profile-divider {
+            width: 100%;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 98, 155, 0.15), transparent);
+            margin: 25px 0;
+        }
+
+        .profile-description {
+            font-size: 1.02rem;
+            line-height: 1.8;
+            color: #475569;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .profile-actions {
+            margin-top: 5px;
+        }
+
+        .btn-linkedin {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #0077b5;
+            color: #ffffff;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 18px rgba(0, 119, 181, 0.25);
+        }
+
+        .btn-linkedin:hover {
+            background: #005582;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(0, 119, 181, 0.35);
+        }
+
+        /* Responsive Breakpoints for Technical Mentors */
+        @media (max-width: 992px) {
+            .mentors-grid {
+                gap: 24px;
+            }
+
+            .mentor-card {
+                flex: 0 0 calc(50% - 12px);
+                max-width: calc(50% - 12px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .mentor-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .mentor-profile-panel {
+                padding: 30px 20px;
+            }
+
+            .profile-photo {
+                width: 125px;
+                height: 125px;
+            }
+
+            .profile-name {
+                font-size: 1.35rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item" aria-label="IEEE">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="ulockai.png" alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="themes.html" class="nav-link">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link active">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="register.html" class="nav-link">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-graphic"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Meet Our Mentors & Judges</h1>
+            <p class="hero-subtitle">
+                Connect with distinguished industry mentors and expert judges from leading global technology companies
+                who will guide, mentor, and evaluate innovative AI solutions at SmartAIthon 2026.
+            </p>
+            <div class="hero-badges">
+                <div class="hero-badge">
+                    <span class="badge-icon">👨‍🏫</span>
+                    <span>5 Technical Mentors</span>
+                </div>
+                <div class="hero-badge">
+                    <span class="badge-icon">⚖️</span>
+                    <span>32 Expert Judges</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Technical Mentors Section -->
+        <section class="section mentors-section reveal" id="mentors-section">
+            <div class="container">
+                <h2 class="section-title">Technical Mentors</h2>
+                <p class="section-subtitle">
+                    Meet our distinguished technical mentors from leading global technology companies who will guide,
+                    inspire, and support participants throughout SmartAIthon 2026.
+                </p>
+
+                <!-- Mentor Cards Grid -->
+                <div class="mentors-grid" id="mentorsGrid">
+                    <!-- Mentors generated dynamically by JS -->
+                </div>
+
+                <!-- Profile Panel Container -->
+                <div class="mentor-profile-wrapper" id="profilePanelWrapper" style="display: none;">
+                    <!-- Expanded profile loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Judges Section -->
+        <section class="section judges-section reveal" id="judges-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Judges</h2>
+                <p class="section-subtitle">
+                    Distinguished experts from academia and industry evaluating innovative solutions at SmartAIthon
+                    2026.
+                </p>
+
+                <!-- Judges Grid -->
+                <div class="judges-grid" id="judgesGrid">
+                    <!-- Dynamic rendering by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section (Panel at a Glance Redesign) -->
+        <section class="section stats-section reveal">
+            <div class="container">
+                <h2 class="section-title">Panel at a Glance</h2>
+                <p class="section-subtitle">What to expect from our world-class mentoring and judging panel.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Technical Mentors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">32</div>
+                        <div class="stat-label">Expert Judges</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Evaluation Criteria</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="stat-number">Global</div>
+                        <div class="stat-label">Industry Experts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section reveal">
+            <div class="cta-content container">
+                <h2 class="cta-title">Want to Stay Updated?</h2>
+                <p class="cta-description">
+                    Follow our announcements for the latest judge reveals and event updates.
+                    Our panel features some of the brightest minds in AI and smart cities.
+                </p>
+                <div class="buttons">
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="btn btn-white">
+                        📸 Follow on Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="btn btn-outline">
+                        🔗 Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">IEEE Smart Cities</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li><a href="https://featherless.ai/" target="_blank">Featherless</a></li>
+                </ul>
+                <h3>Community Partner</h3>
+                <ul>
+                    <li><a href="https://ulockai.netlify.app/" target="_blank">ULockAI</a></li>
+                    <li><a href="https://eventopia.in/" target="_blank">Eventopia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="mentors.html">Mentors & Judges</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        localStorage.removeItem('theme');
+
+        // Active nav link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) link.classList.add('active');
+        });
+
+        // Scroll reveal
+        function reveal() {
+            document.querySelectorAll('.reveal').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 150) {
+                    el.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Technical Mentors Data & Functionality (Alphabetical Order by First Name)
+        const mentorsData = [
+            {
+                id: "abhijit-kale",
+                name: "Mr. Abhijit Kale",
+                designation: "Staff Cloud Infrastructure Engineer",
+                company: "Lucid Motors",
+                location: "USA",
+                photo: "https://drive.google.com/thumbnail?id=1yDlKX09PjESzAbORdZL9fZbfdPwXnmo7&sz=w1000",
+                localPhoto: "Judges/mentor_abhijit_kale.png",
+                linkedin: "https://www.linkedin.com/in/abhijit-kale/",
+                description: "Experienced cloud infrastructure engineer specializing in scalable cloud platforms, enterprise infrastructure, and high-performance cloud systems for modern AI applications."
+            },
+            {
+                id: "ankur-gupta",
+                name: "Mr. Ankur Gupta",
+                designation: "Senior Staff Technical Program Manager, AI Infrastructure",
+                company: "LinkedIn",
+                location: "Sunnyvale, California, USA",
+                photo: "https://drive.google.com/thumbnail?id=1LIM3OTqljkxBUh9Y36sGaPfJPppknMPN&sz=w1000",
+                localPhoto: "Judges/4_mr_ankur_gupta.png",
+                linkedin: "https://www.linkedin.com/in/agupta03/",
+                description: "Expert in AI infrastructure, machine learning systems, distributed computing, cloud infrastructure, reliability engineering, and large-scale engineering platforms."
+            },
+            {
+                id: "harinandan-nair",
+                name: "Mr. Harinandan R Nair",
+                designation: "Lead Engineer",
+                company: "Sodality Tech",
+                location: "New York, USA",
+                photo: "https://drive.google.com/thumbnail?id=1XNwAWjjMakOKdpDaiopN55cwPR9PRl2i&sz=w1000",
+                localPhoto: "Judges/8_mr_harinandan_r_nair.png",
+                linkedin: "https://www.linkedin.com/in/harinandan-r07/",
+                description: "Lead software engineer with expertise in scalable application development, distributed systems, and modern cloud technologies."
+            },
+            {
+                id: "ishan-shah",
+                name: "Mr. Ishan Shah",
+                designation: "Staff Software Engineer",
+                company: "PayPal",
+                location: "San Jose, California, USA",
+                photo: "https://drive.google.com/thumbnail?id=1JJWR7W1VcG-giM-bAEAtGvphVPytXjqd&sz=w1000",
+                localPhoto: "Judges/mentor_ishan_shah.jpeg",
+                linkedin: "https://www.linkedin.com/in/ishandshah/",
+                description: "Experienced software engineer working on scalable payment platforms, distributed systems, and enterprise software architecture."
+            },
+            {
+                id: "ran-tao",
+                name: "Mr. Ran Tao",
+                designation: "Cloud Support Engineer II",
+                company: "Amazon Web Services (AWS)",
+                location: "Seattle, Washington, USA",
+                photo: "https://drive.google.com/thumbnail?id=1muQ7fIn145WiPoOHsc9F_trU9U_5eGrI&sz=w1000",
+                localPhoto: "Judges/mentor_ran_tao.png",
+                linkedin: "https://www.linkedin.com/in/tomtaoran/",
+                description: "Cloud Support Engineer II at Amazon Web Services with expertise in cloud infrastructure, AWS services, distributed systems, and helping organizations build secure, scalable, and reliable cloud solutions."
+            }
+        ];
+
+        const mentorsGrid = document.getElementById('mentorsGrid');
+        const profilePanelWrapper = document.getElementById('profilePanelWrapper');
+        let activeMentorId = null;
+
+        if (mentorsGrid && profilePanelWrapper) {
+            // Render Mentor Cards dynamically
+            mentorsGrid.innerHTML = mentorsData.map(mentor => `
+                <div class="mentor-card" data-mentor-id="${mentor.id}" tabindex="0" role="button" aria-expanded="false" aria-label="View profile of ${mentor.name}">
+                    <div class="mentor-photo-wrapper">
+                        <img src="${mentor.photo}" alt="${mentor.name}" class="mentor-photo" loading="lazy" ${mentor.localPhoto ? `onerror="if(!this.dataset.triedLocal){this.dataset.triedLocal=1;this.src='${mentor.localPhoto}';}"` : ''}>
+                    </div>
+                    <h3 class="mentor-name">${mentor.name}</h3>
+                    <div class="mentor-designation">${mentor.designation}</div>
+                    <div class="mentor-company">${mentor.company}</div>
+                    <a href="${mentor.linkedin}" target="_blank" rel="noopener noreferrer" class="view-profile-btn" onclick="event.stopPropagation();">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 2px;"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+                        View LinkedIn
+                    </a>
+                </div>
+            `).join('');
+
+            reveal();
+
+            const cards = mentorsGrid.querySelectorAll('.mentor-card');
+
+            function selectMentor(mentorId) {
+                const mentor = mentorsData.find(m => m.id === mentorId);
+                if (!mentor) return;
+
+                if (activeMentorId === mentorId && profilePanelWrapper.style.display !== 'none') {
+                    closeProfilePanel();
+                    return;
+                }
+
+                activeMentorId = mentorId;
+
+                cards.forEach(card => {
+                    const isActive = card.getAttribute('data-mentor-id') === mentorId;
+                    card.classList.toggle('active-card', isActive);
+                    card.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+                });
+
+                profilePanelWrapper.innerHTML = `
+                    <div class="mentor-profile-panel show" id="mentorProfilePanel">
+                        <div class="profile-panel-inner">
+                            <button class="panel-close-btn" id="closePanelBtn" aria-label="Close profile panel">&times;</button>
+                            <div class="profile-header">
+                                <img src="${mentor.photo}" alt="${mentor.name}" class="profile-photo" ${mentor.localPhoto ? `onerror="if(!this.dataset.triedLocal){this.dataset.triedLocal=1;this.src='${mentor.localPhoto}';}"` : ''}>
+                                <h3 class="profile-name">${mentor.name}</h3>
+                                <div class="profile-designation">${mentor.designation}</div>
+                                <div class="profile-company">${mentor.company}</div>
+                                <div class="profile-location">
+                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    <span>${mentor.location}</span>
+                                </div>
+                            </div>
+                            <hr class="profile-divider">
+                            <p class="profile-description">${mentor.description}</p>
+                            <hr class="profile-divider">
+                            <div class="profile-actions">
+                                <a href="${mentor.linkedin}" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+                                    View LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                profilePanelWrapper.style.display = 'block';
+
+                const closeBtn = document.getElementById('closePanelBtn');
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', closeProfilePanel);
+                }
+
+                profilePanelWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            function closeProfilePanel() {
+                const panel = document.getElementById('mentorProfilePanel');
+                if (panel) {
+                    panel.classList.remove('show');
+                    setTimeout(() => {
+                        profilePanelWrapper.style.display = 'none';
+                        profilePanelWrapper.innerHTML = '';
+                    }, 300);
+                } else {
+                    profilePanelWrapper.style.display = 'none';
+                }
+                activeMentorId = null;
+                cards.forEach(card => {
+                    card.classList.remove('active-card');
+                    card.setAttribute('aria-expanded', 'false');
+                });
+            }
+
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.getAttribute('data-mentor-id');
+                    selectMentor(id);
+                });
+
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const id = card.getAttribute('data-mentor-id');
+                        selectMentor(id);
+                    }
+                });
+            });
+        }
+
+        // Official Judges Data (32 Judges in Strict Display Order)
+        const judgesData = [
+            {
+                name: "Dr. Vijaya G",
+                designation: "Professor & Head / AI&DS",
+                company: "Karpagam College of Engineering, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/vijaya-pooshan-694649117/",
+                photoId: "1Lj6jGR3SPvkUf7UkCJpHKf-UIJXDLsMR",
+                localPhoto: "Judges/1_dr_g_vijaya.jpeg"
+            },
+            {
+                name: "Ms. Aiswarya Venkitesh",
+                designation: "Principal Cloud Solution Architect",
+                company: "Microsoft, Toronto, Canada",
+                linkedin: "https://www.linkedin.com/in/aiswarya-venkitesh",
+                photoId: "1BJ4UhNiSbbt_l1JpBQbizvqlkX-GPSdz",
+                localPhoto: "Judges/2_ms_aiswarya_venkitesh.png"
+            },
+            {
+                name: "Mr. Anishek Kamal",
+                designation: "Senior Data & AI Architect",
+                company: "Microsoft, Redmond, WA, USA",
+                linkedin: "https://www.linkedin.com/in/anishekkamal/",
+                photoId: "1BIaRbG1Dfsc4bBZz9FwFsWchJgw4nyk3",
+                localPhoto: "Judges/3_mr_anishek_kamal.png"
+            },
+            {
+                name: "Mr. Ankur Gupta",
+                designation: "Senior Staff Technical Program Manager, AI Infrastructure",
+                company: "LinkedIn, Sunnyvale, CA, USA",
+                linkedin: "https://www.linkedin.com/in/agupta03/",
+                photoId: "1QxV5r_BFmvaQlDyKisDgkqx2VyNJxef4",
+                localPhoto: "Judges/4_mr_ankur_gupta.png"
+            },
+            {
+                name: "Ms. Bhavika Faldu",
+                designation: "Senior Data Engineer",
+                company: "Salesforce, San Francisco, CA, USA",
+                linkedin: "https://www.linkedin.com/in/bhavika-faldu/",
+                photoId: "14jGdPbRsLYyGQ8aqHfcQF_6f3y0hOKJJ",
+                localPhoto: "Judges/5_ms_bhavika_faldu.jpg"
+            },
+            {
+                name: "Ms. DhivyaShree M",
+                designation: "Assistant Professor III",
+                company: "KPR Institute of Engineering and Technology, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/dhivyashree-murugesan-61119a26a",
+                photoId: "1NFW1PW--6IFkAVQmrQmIiu-_EdqBhLKI",
+                localPhoto: "Judges/6_ms_dhivyashree_m.jpg"
+            },
+            {
+                name: "Mr. Divyaraj Singh Jatav",
+                designation: "Senior Supply Chain Planner",
+                company: "Amazon Inc",
+                linkedin: "https://www.linkedin.com/in/divyaraj-singh/",
+                photoId: "1vToz8e9338zuTLlOjuER98zMCglrkA2l",
+                localPhoto: "Judges/7_mr_divyaraj_singh_jata.jpg"
+            },
+            {
+                name: "Mr. Harinandan R Nair",
+                designation: "Lead Engineer",
+                company: "Solidity Tech",
+                linkedin: "https://www.linkedin.com/in/harinandan-r07/",
+                photoId: "1GT1XDPI29N-CBvl_swQKvUZ9wHzENUiV",
+                localPhoto: "Judges/8_mr_harinandan_r_nair.png"
+            },
+            {
+                name: "Mr. Jatin Yadav",
+                designation: "Senior Manager",
+                company: "Independent Researcher, Frisco, TX, USA",
+                linkedin: "https://www.linkedin.com/in/jatin-yadav-07423773",
+                photoId: "14jlM6Y9t1so9OMNwjFDqpWQO-_1HO2fH",
+                localPhoto: "Judges/9_mr_jatin_yadav.png"
+            },
+            {
+                name: "Mr. Jeganathan Durai",
+                designation: "Client Operation Manager",
+                company: "Ensono, London, UK",
+                linkedin: "https://www.linkedin.com/in/jeganathandurai/",
+                photoId: "1eORkQ3KSdVj852HI3__cMEs4loG7qq7O",
+                localPhoto: "Judges/10_mr_jegannadhan.png"
+            },
+            {
+                name: "Ms. Jofia Jose Prakash",
+                designation: "Director - AI & Governance",
+                company: "Humanity + AI Inc.",
+                linkedin: "https://www.linkedin.com/in/jofiajoseprakash/",
+                photoId: "1izZuoCXZgiUXTcS439Wm2wNwHts35n5K",
+                localPhoto: "Judges/11_ms_jofia_jose_prakash.jpg"
+            },
+            {
+                name: "Mr. Karan Gupta",
+                designation: "Lead Data Engineer",
+                company: "KPMG, Philadelphia, USA",
+                linkedin: "https://www.linkedin.com/in/karan-gupta-48161318",
+                photoId: "1MRyBRPQ6GMu5dhsHmzOZXjAa5VhDkoyG",
+                localPhoto: "Judges/12_mr_karan_gupta.jpg"
+            },
+            {
+                name: "Dr. Karthick Panneerselvam",
+                designation: "Associate Professor",
+                company: "KPR Institute of Engineering and Technology, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/dr-karthick-panneerselvam-66814737/",
+                photoId: "1hYhQTjJsnJlRKbfYdW2mAzeHMk2RJmbQ",
+                localPhoto: "Judges/13_dr_karthick_panneerselvam.jpg"
+            },
+            {
+                name: "Ms. Manisha Arora",
+                designation: "Data Science Lead",
+                company: "Google, New York, NY, USA",
+                linkedin: "https://www.linkedin.com/in/manisha-arora1",
+                photoId: "1Psr4qSLjIqyGTpEnVvfZhxAWBAqYfYuZ",
+                localPhoto: "Judges/14_ms_manisha_arora.jpg"
+            },
+            {
+                name: "Dr. Monisha R",
+                designation: "Assistant Professor / CSE",
+                company: "Karpagam College of Engineering, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/monisharagunathan/",
+                photoId: "1cGBGn63x8GxNctP_pkkB7QifN17LhoS7",
+                localPhoto: "Judges/15_dr_monisha_r.png"
+            },
+            {
+                name: "Mr. Naga Deepak Pothuraju",
+                designation: "Senior Engineering Manager, Infrastructure",
+                company: "TikTok, San Jose, CA, USA",
+                linkedin: "https://www.linkedin.com/in/deppfx",
+                photoId: "1HFHbOlBc8d1EECqUDhXAoy8nBMK4SvRB",
+                localPhoto: "Judges/16_mr_naga_deepak_pothuraju.jpg"
+            },
+            {
+                name: "Mr. Naveen Kumar Mylarappa",
+                designation: "Lead Data Engineer",
+                company: "Apple, Cupertino, CA, USA",
+                linkedin: "https://www.linkedin.com/in/naveenmylarappa/",
+                photoId: "1Em5BSEDZvw7CQTEIttZgr92MrfWofkbK",
+                localPhoto: "Judges/17_mr_naveen_kumar_mylarappa.jpg"
+            },
+            {
+                name: "Dr. Nithiavathy R",
+                designation: "Associate Professor / AI&DS",
+                company: "Karpagam College of Engineering, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/dr-nithiavathy-r-a894651b1/",
+                photoId: "12iDawFRC2t6jXHFyb-JVZJ-tw-q2ml-g",
+                localPhoto: "Judges/18_dr_nithiavathy_r.png"
+            },
+            {
+                name: "Dr. Pandiyarajan G",
+                designation: "Head / AI&ML",
+                company: "KPR Institute of Engineering and Technology, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/pandiyarajan-gurupatham-48372184/",
+                photoId: "1b4JGwMeUUfMjP02kvLCajo24WDAbO75Y",
+                localPhoto: "Judges/19_dr_pandiyarajan_g.png"
+            },
+            {
+                name: "Mr. PremKumar M",
+                designation: "Senior Software Engineer",
+                company: "MulticoreWare, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/premkumar-murugan-551b10160/",
+                photoId: "1dWc78ZalqH9FEp-Ik2Gv41FrgYDubDBI",
+                localPhoto: "Judges/20_mr_prem_kumar_m.png"
+            },
+            {
+                name: "Ms. Prathusha Prakash",
+                designation: "Software Engineering Manager",
+                company: "TikTok, San Jose, CA, USA",
+                linkedin: "https://www.linkedin.com/in/prathusha-prakash-35536b128",
+                photoId: "1VM2EqAiuzkn9ytrkyBiNIhIQs22Z5CzL",
+                localPhoto: "Judges/21_ms_prathusha_prakash.jpg"
+            },
+            {
+                name: "Mr. Raunak Kumar",
+                designation: "Senior Manager, GTM Analytics",
+                company: "Fin, San Francisco, CA, USA",
+                linkedin: "https://www.linkedin.com/in/raunakkumar1991/",
+                photoId: "1z7Z8kp0MXdkr8hQMx6fxSYJtkq7nUTyY",
+                localPhoto: "Judges/22_mr_raunak_kumar.jpg"
+            },
+            {
+                name: "Ms. Saranyavaishalini V G",
+                designation: "Assistant Professor / AI&DS",
+                company: "Karpagam College of Engineering, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/saranyavaishalini-vg-683349241",
+                photoId: "1eStbrw6as4R3I8Zt2xPEg-FChXMLwqkN",
+                localPhoto: "Judges/23_ms_saranyavaishalini_v_g.jpg"
+            },
+            {
+                name: "Ms. Shania Rasheed Nalagath",
+                designation: "Senior AI Product Manager",
+                company: "Microsoft, Redmond, WA, USA",
+                linkedin: "https://www.linkedin.com/in/nsr1012",
+                photoId: "17CFansKhXoR-8INxeAuRmrIk2gKwAADY",
+                localPhoto: "Judges/24_ms_shania_rasheed_nalagath.jpg"
+            },
+            {
+                name: "Ms. Srikavya Pajjuru",
+                designation: "Software Engineer",
+                company: "AMS IT Solutions, Inc., Dover, DE, USA",
+                linkedin: "https://www.linkedin.com/in/srikavya-pajjuru-5b6a15276",
+                photoId: "121118yV8RHQImM1mXsf3VY61LpASWzA0",
+                localPhoto: "Judges/25_ms_srikavya_pajjuru.png"
+            },
+            {
+                name: "Mr. Saurabh Kakkar",
+                designation: "Director / Program Manager – Basel Data Repository",
+                company: "Santander Bank, Dallas, TX, USA",
+                linkedin: "https://www.linkedin.com/in/saurabh-kakkar-61a742111",
+                photoId: "11CYINDgRv0upxLOz3RO-y2ykLCIggGwf",
+                localPhoto: "Judges/26_mr_sourab_kakkar.png"
+            },
+            {
+                name: "Mr. Sourabh Mane",
+                designation: "Design Engineer",
+                company: "CodeRabbit",
+                linkedin: "https://www.linkedin.com/in/sourabh-mane/",
+                photoId: "19fj-96Jwde-6o6NZ-1aMsooqN7RzK1Lb",
+                localPhoto: "Judges/27_mr_sourabh_mane.png"
+            },
+            {
+                name: "Mr. Surya J",
+                designation: "Member Technical Staff",
+                company: "Zoho Corporation Private Limited, Paruvai",
+                linkedin: "https://www.linkedin.com/in/surya-rj-8007801a4",
+                photoId: "19nBGbm2B96jriOstSUwj2Y0Gv7lSb2XH",
+                localPhoto: "Judges/28_mr_surya_j.png"
+            },
+            {
+                name: "Dr. Tamil Selvan",
+                designation: "Professor / EEE",
+                company: "Karpagam College of Engineering, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/tamilselvan-v-69b8b757/",
+                photoId: "16_jSUtK3aeE433kpI4shEWT3xEseCnG0",
+                localPhoto: "Judges/29_dr_tamilselvan.png"
+            },
+            {
+                name: "Mr. Tushar Badlani",
+                designation: "Security Specialist",
+                company: "Figma",
+                linkedin: "https://www.linkedin.com/in/tusharbadlani/",
+                photoId: "1F_sMEY7ZUfQ58sst70WWbdbxnPY9KgxL",
+                localPhoto: "Judges/30_mr_tushar_badlani.jpg"
+            },
+            {
+                name: "Ms. Velammal M",
+                designation: "Assistant Professor II",
+                company: "KPR Institute of Engineering and Technology, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/velammal-mohan-04a418232",
+                photoId: "1i2gpDM-z187FooULqUr-SBzNAWUWq8bM",
+                localPhoto: "Judges/31_ms_velammal_m.jpg"
+            },
+            {
+                name: "Ms. Vishnupriya K",
+                designation: "Assistant Professor",
+                company: "KPR Institute of Engineering and Technology, Coimbatore",
+                linkedin: "https://www.linkedin.com/in/vishnupriya-k-28ba97176",
+                photoId: "1XiRXkF-e0By6V0ANNNE49g27HXHW-_J_",
+                localPhoto: "Judges/32_ms_vishnupriya_k.jpg"
+            }
+        ];
+
+        const judgesGrid = document.getElementById('judgesGrid');
+        if (judgesGrid) {
+            judgesGrid.innerHTML = judgesData.map(judge => {
+                const cleanName = judge.name.replace(/^(Dr\.|Mr\.|Ms\.)\s*/i, '');
+                const initials = cleanName.split(' ').map(n => n[0]).filter(c => /[A-Za-z]/.test(c)).slice(0, 2).join('').toUpperCase() || 'J';
+                const photoUrl = judge.localPhoto ? judge.localPhoto : `https://lh3.googleusercontent.com/d/${judge.photoId}=s800`;
+
+                const rawDesig = judge.designation || '';
+                const designationHtml = rawDesig ? `<div class="judge-designation">${rawDesig}</div>` : '';
+                const companyHtml = judge.company ? `<div class="judge-company">${judge.company}</div>` : '';
+
+                let linkedinUrl = judge.linkedin ? (judge.linkedin.startsWith('http') ? judge.linkedin : `https://${judge.linkedin}`) : 'https://www.linkedin.com/company/ieee-kce-sb';
+                const buttonHtml = `
+                    <div class="judge-btns">
+                        <a href="${linkedinUrl}" target="_blank" rel="noopener noreferrer" class="judge-btn judge-btn-linkedin">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.74a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2z"/></svg>
+                            View LinkedIn
+                        </a>
+                    </div>
+                `;
+
+                return `
+                    <div class="judge-card">
+                        <div class="judge-photo-wrapper">
+                            <img src="${photoUrl}" alt="${judge.name}" class="judge-photo" loading="lazy" referrerpolicy="no-referrer" onerror="if(!this.dataset.tried1){this.dataset.tried1=1;this.src='https://drive.google.com/thumbnail?id=${judge.photoId}&sz=w1000';return;}if(!this.dataset.triedLocal && '${judge.localPhoto}'){this.dataset.triedLocal=1;this.src='${judge.localPhoto}';return;}this.style.display='none';this.nextElementSibling.style.display='flex';">
+                            <div class="judge-avatar-fallback" style="display:none; width:100%; height:100%; border-radius:50%; background:linear-gradient(135deg, var(--primary), var(--accent)); color:#ffffff; align-items:center; justify-content:center; font-size:2.2rem; font-weight:700; font-family:'Poppins', sans-serif;">
+                                ${initials}
+                            </div>
+                        </div>
+                        <h3 class="judge-name">${judge.name}</h3>
+                        ${designationHtml}
+                        ${companyHtml}
+                        ${buttonHtml}
+                    </div>
+                `;
+            }).join('');
+            reveal();
+        }
+    </script>
+</body>
+
+</html>

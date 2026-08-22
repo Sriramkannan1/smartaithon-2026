@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themes - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Explore the exciting themes of SmartAIthon 2026 - Smart Traffic Management, Air Quality Monitoring, Waste Management, Disaster Prediction, and Open Innovation.">
+    <meta name="keywords"
+        content="SmartAIthon themes, AI hackathon themes, smart cities, traffic management, air quality, waste management, disaster prediction">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Themes - SmartAIthon 2026">
+    <meta property="og:description" content="Explore our hackathon themes and find your area of innovation">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/themes.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Navbar Stylesheet -->
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 72px;
+        }
+
+        /* Logo Ribbon — static, fully visible */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        .nav-menu-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .nav-link:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.9), rgba(0, 206, 209, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* Full Width Themes Section */
+        .themes-fullwidth {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 25px;
+            text-align: center;
+        }
+
+        /* Themes Grid */
+        .themes-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(220px, 1fr));
+            gap: 22px;
+            margin-top: 60px;
+            width: 100%;
+            align-items: stretch;
+            justify-items: center;
+        }
+
+        /* Unified Card Design */
+        .theme-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0, 98, 155, 0.10);
+            border: 1.5px solid rgba(0, 98, 155, 0.08);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Top accent bar (always visible) */
+        .theme-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 22px 22px 0 0;
+        }
+
+        .theme-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 24px 56px rgba(0, 98, 155, 0.22);
+            border-color: rgba(0, 206, 209, 0.35);
+        }
+
+        /* Card Header — same for all */
+        .theme-header {
+            background: linear-gradient(150deg, rgba(0, 98, 155, 0.07) 0%, rgba(0, 206, 209, 0.10) 100%);
+            padding: 28px 20px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 230px;
+        }
+
+        /* Subtle shimmer orb behind header */
+        .theme-header::after {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(0, 206, 209, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, -8px);
+            }
+        }
+
+        /* Number badge */
+        .theme-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 0.82rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 12px rgba(0, 98, 155, 0.30);
+        }
+
+        /* Icon */
+        .theme-icon {
+            font-size: 3.4rem;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            animation: iconFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes iconFloat {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-7px);
+            }
+        }
+
+        /* Title — same primary colour for every card */
+        .theme-title {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0;
+            font-weight: 700;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+            min-height: 4.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Card Body */
+        .theme-content {
+            padding: 26px 22px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        /* Divider line below header inside content */
+        .theme-content::before {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 3px;
+            border-radius: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 0 auto 18px;
+        }
+
+        .theme-description {
+            font-size: 0.92rem;
+            color: var(--dark-gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .theme-features {
+            list-style: none;
+            margin: 0 auto 24px;
+            flex-grow: 1;
+            width: fit-content;
+            max-width: 100%;
+        }
+
+        .theme-features li {
+            padding: 8px 0;
+            color: var(--text);
+            font-size: 0.88rem;
+            position: relative;
+            padding-left: 26px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            transition: color 0.25s ease, transform 0.25s ease;
+            text-align: left;
+        }
+
+        .theme-features li:last-child {
+            border-bottom: none;
+        }
+
+        .theme-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .theme-features li:hover {
+            color: var(--primary);
+            transform: translateX(4px);
+        }
+
+        /* CTA button — identical on every card */
+        .theme-action {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 11px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.88rem;
+            letter-spacing: 0.3px;
+            transition: transform 0.28s ease, box-shadow 0.28s ease;
+            align-self: center;
+            margin-top: auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .theme-action::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0);
+            transition: background 0.28s ease;
+        }
+
+        .theme-action:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 98, 155, 0.38);
+        }
+
+        .theme-action:hover::after {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+
+
+        /* Important Dates Grid */
+        .dates-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .themes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            /* Important Dates Grid */
+            .dates-grid {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 20px;
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 20px 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .logo-section {
+                gap: 5px;
+            }
+
+            .logo-item {
+                font-size: 10px;
+                padding: 3px 6px;
+                margin: 0 4px;
+            }
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-track .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-track .logo-item:nth-child(1),
+            .logo-track .logo-item:nth-child(2),
+            .logo-track .logo-item:nth-child(3),
+            .logo-track .logo-item:nth-child(4),
+            .logo-track .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-track .logo-item:nth-child(6),
+            .logo-track .logo-item:nth-child(7),
+            .logo-track .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-track .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+
+            .hero {
+                padding: 155px 16px 30px;
+                min-height: auto;
+            }
+
+            .hero-content {
+                margin-top: 0;
+            }
+
+            .themes-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .dates-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .theme-header {
+                padding: 28px 20px 22px;
+                min-height: auto;
+            }
+
+            .theme-content {
+                padding: 25px 20px;
+            }
+
+            .theme-icon {
+                font-size: 3rem;
+            }
+
+            .theme-title {
+                font-size: 1.25rem;
+                min-height: auto;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+
+            .themes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        /* Particle Background */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: particle-float 10s infinite linear;
+        }
+
+        @keyframes particle-float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+
+                <!-- Original Set -->
+
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item"
+                    aria-label="Open IEEE official website">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+
+                <!-- ULockAI Logo Added -->
+
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguOL9StI253GqGZ1OnygN_1p40OzbRRYigfDyZvdtIJhmEuqrb8Skxz9o7tAWP5vrJZLaxkcz9bLju7oVwLNIJGcUaGn9gJUYtgBAni4uT_H8a-1ShgumdaxIGocLVcFKHDf1Yz2jffRZjTnmaMR81SRICeOjbC_zM_K_MNRhLxoOMfKif-n3yh5pelUM/s16000/Screenshot%202026-05-25%20114624.png"
+                        alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="themes.html" class="nav-link active">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-btn">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1>Hackathon Themes</h1>
+            <p>Choose your area of innovation and create AI solutions for real-world urban challenges</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Themes Section -->
+        <section class="section reveal" style="display:flex; flex-direction:column; align-items:center;">
+            <div class="themes-fullwidth">
+                <h2 class="section-title">Explore Our Themes</h2>
+                <p class="section-subtitle">Select a theme that aligns with your passion and expertise. Each theme
+                    addresses critical urban challenges and offers opportunities for impactful AI innovation.</p>
+
+                <div class="themes-grid">
+                    <!-- Theme 1: Smart Traffic Management -->
+                    <div class="theme-card">
+                        <div class="theme-header">
+                            <div class="theme-number">1</div>
+                            <div class="theme-icon">🚦</div>
+                            <h3 class="theme-title">Smart Traffic Management using AI</h3>
+                        </div>
+                        <div class="theme-content">
+                            <p class="theme-description">Develop intelligent transportation systems that optimize
+                                traffic flow, reduce congestion, and enhance road safety through advanced AI algorithms
+                                and real-time data analysis.</p>
+                            <ul class="theme-features">
+                                <li>Traffic prediction and optimization</li>
+                                <li>Smart traffic signal control</li>
+                                <li>Real-time congestion monitoring</li>
+                                <li>Accident detection and prevention</li>
+                                <li>Route optimization algorithms</li>
+                            </ul>
+                            <a href="#" class="theme-action" onclick="selectTheme('Smart Traffic Management')">Choose
+                                the Theme</a>
+                        </div>
+                    </div>
+
+                    <!-- Theme 2: Air Quality Monitoring -->
+                    <div class="theme-card">
+                        <div class="theme-header">
+                            <div class="theme-number">2</div>
+                            <div class="theme-icon">🌍</div>
+                            <h3 class="theme-title">Air Quality Prediction and Monitoring</h3>
+                        </div>
+                        <div class="theme-content">
+                            <p class="theme-description">Create AI-powered environmental monitoring systems that track
+                                air quality, predict pollution patterns, and provide actionable insights for healthier
+                                urban environments.</p>
+                            <ul class="theme-features">
+                                <li>Real-time air quality monitoring</li>
+                                <li>Pollution source identification</li>
+                                <li>Predictive air quality modeling</li>
+                                <li>Health impact assessment</li>
+                                <li>Environmental alert systems</li>
+                            </ul>
+                            <a href="#" class="theme-action" onclick="selectTheme('Air Quality Monitoring')">Choose the
+                                Theme</a>
+                        </div>
+                    </div>
+
+                    <!-- Theme 3: Smart Waste Management -->
+                    <div class="theme-card">
+                        <div class="theme-header">
+                            <div class="theme-number">3</div>
+                            <div class="theme-icon">♻️</div>
+                            <h3 class="theme-title">Smart Waste Management Systems</h3>
+                        </div>
+                        <div class="theme-content">
+                            <p class="theme-description">Innovate waste collection and recycling solutions using IoT
+                                sensors, machine learning, and AI to optimize routes, reduce costs, and improve urban
+                                sustainability.</p>
+                            <ul class="theme-features">
+                                <li>Smart bin monitoring systems</li>
+                                <li>Optimized collection routes</li>
+                                <li>Waste classification AI</li>
+                                <li>Recycling optimization</li>
+                                <li>Waste generation prediction</li>
+                            </ul>
+                            <a href="#" class="theme-action" onclick="selectTheme('Smart Waste Management')">Choose the
+                                Theme</a>
+                        </div>
+                    </div>
+
+                    <!-- Theme 4: Disaster Prediction -->
+                    <div class="theme-card">
+                        <div class="theme-header">
+                            <div class="theme-number">4</div>
+                            <div class="theme-icon">🚨</div>
+                            <h3 class="theme-title">Disaster Prediction and Alert Systems</h3>
+                        </div>
+                        <div class="theme-content">
+                            <p class="theme-description">Build early warning systems and predictive models using AI to
+                                anticipate natural disasters, enabling timely evacuations and emergency response
+                                coordination.</p>
+                            <ul class="theme-features">
+                                <li>Early warning systems</li>
+                                <li>Disaster prediction models</li>
+                                <li>Emergency response optimization</li>
+                                <li>Risk assessment algorithms</li>
+                                <li>Real-time monitoring systems</li>
+                            </ul>
+                            <a href="#" class="theme-action" onclick="selectTheme('Disaster Prediction')">Choose the
+                                Theme</a>
+                        </div>
+                    </div>
+
+                    <!-- Theme 5: Open Innovation -->
+                    <div class="theme-card">
+                        <div class="theme-header">
+                            <div class="theme-number">5</div>
+                            <div class="theme-icon">💡</div>
+                            <h3 class="theme-title">Open Innovation</h3>
+                        </div>
+                        <div class="theme-content">
+                            <p class="theme-description">Any AI-based solution for urban challenges. This theme
+                                encourages creative freedom and innovation beyond predefined categories, allowing you to
+                                address any urban problem you're passionate about.</p>
+                            <ul class="theme-features">
+                                <li>Unlimited problem scope</li>
+                                <li>Creative freedom encouraged</li>
+                                <li>Urban sustainability focus</li>
+                                <li>Citizen engagement solutions</li>
+                                <li>Smart city infrastructure</li>
+                            </ul>
+                            <a href="#" class="theme-action" onclick="selectTheme('Open Innovation')">Choose the
+                                Theme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">
+                                IEEE Smart Cities
+                            </a></li>
+                    </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://featherless.ai/" target="_blank">
+                            Featherless
+                        </a>
+                    </li>
+                </ul>
+                <h3>Community Partner</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://ulockai.netlify.app/" target="_blank">
+                            ULockAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eventopia.in/" target="_blank">
+                            Eventopia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function () {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Clear any stored theme data
+        localStorage.removeItem('theme');
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Particle Background
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 10 + 5 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 10 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        createParticles();
+
+        // Theme Selection
+        function selectTheme(themeName) {
+            // Store selected theme in localStorage
+            localStorage.setItem('selectedTheme', themeName);
+
+            // Show confirmation message
+            const message = document.createElement('div');
+            message.style.cssText = `
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: white;
+                padding: 20px 30px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+                z-index: 10000;
+                font-weight: 600;
+                animation: fadeInUp 0.5s ease-out;
+            `;
+            message.textContent = `Theme "${themeName}" selected! Proceed to registration.`;
+            document.body.appendChild(message);
+
+            setTimeout(() => {
+                message.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(message);
+                    // Redirect to registration page
+                    window.location.href = 'register.html';
+                }, 500);
+            }, 2000);
+        }
+
+        // Add hover effect to theme cards
+        const themeCards = document.querySelectorAll('.theme-card');
+        themeCards.forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Intersection Observer for theme cards animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        themeCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+    </script>
+    <!-- Shared Navbar Script -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>

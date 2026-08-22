@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - SmartAIthon 2026 | IEEE Smart Cities AI Hackathon</title>
+    <meta name="description"
+        content="Frequently asked questions about SmartAIthon 2026 - IEEE Smart Cities AI Hackathon. Find answers to registration, eligibility, submission, and prize questions.">
+    <meta name="keywords"
+        content="SmartAIthon FAQ, hackathon questions, IEEE Smart Cities, registration help, eligibility criteria">
+    <meta name="author" content="IEEE KCE Student Branch">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="FAQ - SmartAIthon 2026">
+    <meta property="og:description" content="Find answers to frequently asked questions about SmartAIthon 2026">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartaithon2026.com/faq.html">
+    <meta property="og:image" content="https://smartaithon2026.com/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Shared Navbar Stylesheet -->
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #00629B;
+            --secondary: #1a365d;
+            --accent: #00CED1;
+            --background: #ffffff;
+            --text: #333333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Logo Ribbon — static, fully visible */
+        .logo-ribbon {
+            width: 100%;
+            overflow-x: hidden;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 10px 12px;
+        }
+
+        .logo-track {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .logo-item img {
+            height: 48px;
+            width: auto;
+            max-width: 120px;
+            object-fit: contain;
+            display: block;
+            transition: transform .3s ease, opacity .3s ease;
+            opacity: 0.85;
+        }
+
+        .logo-item:hover img {
+            transform: translateY(-3px);
+            opacity: 1;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: clamp(10px, 1.3vw, 22px);
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: auto;
+            padding: 160px 20px 35px;
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.9), rgba(0, 206, 209, 0.9)),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,106.7C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 900px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+
+        /* Search Section */
+        .search-section {
+            background: var(--light-gray);
+            padding: 30px 0;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 45px 12px 20px;
+            border: 2px solid var(--light-gray);
+            border-radius: 50px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 206, 209, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--dark-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 45px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+
+        /* FAQ Accordion */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-category {
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-icon {
+            font-size: 1.8rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 10px 30px rgba(0, 98, 155, 0.2);
+        }
+
+        .faq-question {
+            width: 100%;
+            border: none;
+            background: none;
+            text-align: left;
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, rgba(0, 98, 155, 0.05), rgba(0, 206, 209, 0.05));
+        }
+
+        .faq-question h3 {
+            font-size: 1.1rem;
+            color: var(--text);
+            font-weight: 600;
+            margin: 0;
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .faq-toggle {
+            width: 30px;
+            height: 30px;
+            border: 2px solid var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-toggle::before {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            background: var(--accent);
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active .faq-toggle::before {
+            content: '+';
+            color: white;
+            transform: rotate(90deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: var(--light-gray);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding: 25px 30px;
+        }
+
+        .faq-answer p {
+            color: var(--dark-gray);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .faq-answer ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 8px;
+            color: var(--dark-gray);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .contact-description {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            background: white;
+            color: var(--primary);
+            padding: 15px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            background: rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            background: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 135px;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                padding: 20px 0;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                gap: 18px;
+            }
+
+
+            .logo-ribbon {
+                padding: 8px 10px;
+                overflow-x: hidden;
+            }
+
+            .logo-track {
+                display: grid !important;
+                grid-template-columns: repeat(30, 1fr) !important;
+                gap: 8px 0 !important;
+                justify-items: center !important;
+                align-items: center !important;
+                width: 100% !important;
+            }
+
+            .logo-item {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .logo-item:nth-child(1),
+            .logo-item:nth-child(2),
+            .logo-item:nth-child(3),
+            .logo-item:nth-child(4),
+            .logo-item:nth-child(5) {
+                grid-column: span 6 !important;
+            }
+
+            .logo-item:nth-child(6),
+            .logo-item:nth-child(7),
+            .logo-item:nth-child(8) {
+                grid-column: span 10 !important;
+            }
+
+            .logo-item img {
+                height: 28px !important;
+                width: auto !important;
+                max-width: 90px !important;
+                object-fit: contain !important;
+            }
+
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .faq-question {
+                padding: 20px;
+            }
+
+            .faq-question h3 {
+                font-size: 1rem;
+                padding-right: 15px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 20px;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Scroll Reveal Animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        /* Highlight animation */
+        .highlight {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(255, 193, 7, 0.1));
+            animation: highlight 2s ease-in-out;
+        }
+
+        @keyframes highlight {
+
+            0%,
+            100% {
+                background: transparent;
+            }
+
+            50% {
+                background: linear-gradient(135deg, rgba(255, 193, 7, 0.2), rgba(255, 193, 7, 0.1));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <!-- Logo Ribbon -->
+        <div class="logo-ribbon">
+            <div class="logo-track">
+
+                <!-- Original Set -->
+
+                <!-- Original Set -->
+
+                <a href="https://www.ieee.org/" target="_blank" class="logo-item"
+                    aria-label="Open IEEE official website">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogIeothirAnBoahrkZhdeGHdvG5CvCC7BXUQucshZM9OOrMvuN1rP3bPguT-YR59a3XrtlMIbK40b-WQ7bOthC0o0PGptG_ISnsrwU5dd1ExlUCL__0QBV0925DP6Ubz9N1E6Bb9HllroT9M9PqWD5g90MByXESjw_Jjh0BOSUcCz-dfgJTS5wUeCmv8/s1600/Ieee_blue.jpg"
+                        alt="IEEE Logo">
+                </a>
+
+                <a href="https://smartcities.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjmCnzTGQ2NfrbQQkIKjFh9mdPKuaYImwi6eajrU2fQuvC3wbWEPcb2tJ4P4gjG1OvcGj4ZG0cpkk-J4hETP5VFiBDY7jWKhVZ_-VcVfftaaVthm7Jhm_OTmUx6OuToAo04AeSUg9I9YcZU35FHYByRJaINFrLyrcFuOqt8wxmcnxfRCgRJpXX9OHHux4/s1600/smartcitylogo.jpg"
+                        alt="IEEE Smart Cities">
+                </a>
+
+                <a href="https://cis.ieee.org/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqsInfFgu7k582qb05jZtGesVDfDEvyyrYY083QB91LNhCud9oVQhJ2GUVwzvPaK3N4QezzzO4iPKZDmrMPCfmxObQRri-9DH-AX_Pad0AeTz1hUTT6Mt3477sEnqZCC3hFUfnJbgOL6x4wLPFRTeoO28eqff9PRaX09Fvw67xF5Z0RlWf6YICZdCIQks/s1600/IEEE%20CIS%20logo.jpg"
+                        alt="IEEE CIS">
+                </a>
+
+                <a href="javascript:void(0)" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V5Y88R0R3rKwJCc_2SBszAyOIN5viSJfOGTsO9OcVnI73kBAPBEOKfyVKQRPtKLppfXVI4sFJ0RNky-A5OMz0p2oAS93TU2rYeIuaZ0ux6M9KiJC-adCOXNsUMwrFdqsQ2pb0ZOZtcq2fgRY_G18Ur6dnivnq3_TvJD9Gm8nI2S4puVa6hBi2NG1KWI/s1600/IEEE%20SB%20Logo.jpg"
+                        alt="IEEE KCE SB">
+                </a>
+
+                <a href="https://www.kce.ac.in" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgUKgq1RGf3l55duWZSIQKN4re5bUxBGSK5qAK4TCPGwFHcc_6vjSMjGQe9n-qrk5iewtEQ9Hi4NhaKVKSQ03ju6C0If6cxdPpkmEluTln4xLWGNN8er9CsetNPYBHHjrzzD5pxoZicSzUF271yTTv1nGnoZjA_hMI6se8_EW41Dv62I-24iJc04Zyuoo/s1600/KCE%20UPDTATED%20LOGO%202024.png"
+                        alt="KCE">
+                </a>
+                <!-- AD Logo Added -->
+                <a href="https://www.linkedin.com/company/kceai" target="blank" class="logo-item">
+                    <img src="AD logo association (1).png"
+                        alt="Association of Artificial Intelligence and Data Science Logo">
+                </a>
+
+                <!-- ULockAI Logo Added -->
+
+                <a href="https://featherless.ai/" target="_blank" class="logo-item">
+                    <img src="featherless.png" alt="featherless Logo">
+                </a>
+                <a href="https://ulockai.netlify.app/" target="_blank" class="logo-item">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguOL9StI253GqGZ1OnygN_1p40OzbRRYigfDyZvdtIJhmEuqrb8Skxz9o7tAWP5vrJZLaxkcz9bLju7oVwLNIJGcUaGn9gJUYtgBAni4uT_H8a-1ShgumdaxIGocLVcFKHDf1Yz2jffRZjTnmaMR81SRICeOjbC_zM_K_MNRhLxoOMfKif-n3yh5pelUM/s16000/Screenshot%202026-05-25%20114624.png"
+                        alt="ULockAI Logo">
+                </a>
+                <a href="https://eventopia.in/" target="_blank" class="logo-item">
+                    <img src="Eventopia.png" alt="Eventopia Logo">
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-menu-container">
+            <div class="nav-container">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="themes.html" class="nav-link">Themes</a></li>
+                    <li><a href="timeline.html" class="nav-link">Timeline</a></li>
+                    <li><a href="submissions.html" class="nav-link">Submission Guidelines</a></li>
+                    <li><a href="judging.html" class="nav-link">Judging Criteria</a></li>
+                    <li><a href="mentors.html" class="nav-link">Mentors & Judges</a></li>
+                    <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+                    <li><a href="team.html" class="nav-link">Organizing Team</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-btn">Register Now</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about SmartAIthon 2026</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search for questions...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section reveal">
+            <div class="container">
+                <div class="faq-container" id="faqContainer">
+                    <!-- General Questions -->
+                    <div class="faq-category">
+                        <h2 class="category-title">
+                            <span class="category-icon">🎯</span>
+                            General Questions
+                        </h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What is SmartAIthon 2026?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>SmartAIthon 2026 is a multi-stage innovation challenge organized by IEEE KCE SB CIS
+                                    Chapter, and IEEE Smart Cities Initiative. It brings together students, developers,
+                                    and innovators to solve real-world urban problems using Artificial Intelligence and
+                                    emerging technologies.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Who can participate in SmartAIthon 2026?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>SmartAIthon 2026 is open to:</p>
+                                <ul>
+                                    <li>Undergraduate (UG) students from any discipline</li>
+                                    <li>Postgraduate (PG) students pursuing master's or doctoral degrees</li>
+                                    <li>Students can participate individually or in teams</li>
+                                    <li>Cross-college teams are allowed</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Is the event completely online?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, SmartAIthon 2026 is completely online. All stages including registration, idea
+                                    submission, prototype submission, and final presentations will be conducted through
+                                    online platforms, primarily Google Meet for the final round.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What is the team size limit?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Teams can have 1 to 4 members maximum. Each team must designate one member as the
+                                    team leader for communication purposes. Participants cannot join multiple teams
+                                    simultaneously.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration Questions -->
+                    <div class="faq-category">
+                        <h2 class="category-title">
+                            <span class="category-icon">📝</span>
+                            Registration & Fees
+                        </h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Are certificates provided to participants?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, certificates will be provided to all participants who successfully complete the
+                                    registration process and submit their projects. Special certificates will be awarded
+                                    to winners and top performers.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Is registration free for all stages?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Stage 1 (Registration & Idea Submission) is completely free for all participants.
+                                    However, there may be nominal fees for subsequent stages for non-IEEE members. IEEE
+                                    CIS/Smart Cities members get special discounts.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What are the registration fees for different categories?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Registration fees for Stage 2 onwards:</p>
+                                <ul>
+                                    <li>IEEE CIS / Smart Cities Members: ₹150</li>
+                                    <li>IEEE Members: ₹180</li>
+                                    <li>Non-IEEE Participants: ₹200</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>How do I register for the hackathon?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You can register through the official Google Form link provided on our website. The
+                                    registration form requires team details, member information, project details, and
+                                    submission links. Make sure to fill all required fields accurately.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project & Submission Questions -->
+                    <div class="faq-category">
+                        <h2 class="category-title">
+                            <span class="category-icon">💻</span>
+                            Projects & Submissions
+                        </h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Is a prototype mandatory for Stage 2?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, a working prototype is mandatory for Stage 2. You need to submit your working
+                                    model along with source code, documentation, demo video (2-5 minutes), and workflow
+                                    video (2 minutes).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>How does the evaluation process work?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Projects are evaluated based on:</p>
+                                <ul>
+                                    <li>Innovation & Creativity (25%)</li>
+                                    <li>Technical Implementation (25%)</li>
+                                    <li>Real-World Impact (20%)</li>
+                                    <li>Feasibility & Scalability (15%)</li>
+                                    <li>Presentation Quality (15%)</li>
+                                </ul>
+                                <p>The evaluation process includes initial screening, expert review, technical
+                                    assessment, and final presentation rounds.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What are the submission requirements?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>For Stage 2, you need to submit:</p>
+                                <ul>
+                                    <li>GitHub Repository with complete source code</li>
+                                    <li>Demo Video (2-5 minutes)</li>
+                                    <li>Workflow Video (2 minutes)</li>
+                                    <li>Technical documentation</li>
+                                    <li>Presentation slides (using provided template)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Can I submit a project that I've already built?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Projects must be developed specifically for SmartAIthon 2026. However, you can build
+                                    upon existing ideas or technologies as long as the core innovation and
+                                    implementation are done during the hackathon period.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Final Round & Prizes -->
+                    <div class="faq-category">
+                        <h2 class="category-title">
+                            <span class="category-icon">🏆</span>
+                            Final Round & Prizes
+                        </h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What are the details of the final round?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The final round will be conducted online via Google Meet on August 24, 2026. Each
+                                    team gets:</p>
+                                <ul>
+                                    <li>5 minutes for presentation</li>
+                                    <li>5 minutes for Q&A session</li>
+                                    <li>Two time slots available: FN (10:00 AM - 12:00 Noon) and AN (04:00 PM - 07:00
+                                        PM)</li>
+                                    <li>Slots are available on first-come-first-served basis</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What are the prize details?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The total prize pool is ₹15,000 distributed across 8 prizes:</p>
+                                <ul>
+                                    <li>First Prize: ₹5,000</li>
+                                    <li>Second Prize: ₹3,000</li>
+                                    <li>Third Prize: ₹2,000</li>
+                                    <li>Prizes 4–8: Category & Track Prizes</li>
+                                </ul>
+                                <p>Winners will be announced on August 25, 2026.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What is the total prize pool?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>The total prize pool for SmartAIthon 2026 is ₹15,000 across 8 prizes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Questions -->
+                    <div class="faq-category">
+                        <h2 class="category-title">
+                            <span class="category-icon">⚙️</span>
+                            Technical & Platform
+                        </h2>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What technologies can I use for my project?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You can use any programming languages, frameworks, tools, or technologies that best
+                                    suit your project. However, your solution should demonstrate AI/ML capabilities and
+                                    address smart city challenges. Make sure to provide proper documentation for all
+                                    technologies used.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>Where can I download the PPT templates?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>PPT templates for Round 1 (Idea Submission) and Round 2 (Prototype Presentation) are
+                                    available on the Submission Guidelines page. You can download them directly from the
+                                    template cards section.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question" type="button" aria-expanded="false">
+                                <h3>What if I face technical issues during submission?</h3>
+                                <div class="faq-toggle"></div>
+                            </button>
+                            <div class="faq-answer">
+                                <p>If you face any technical issues during submission, please contact us immediately at
+                                    smartaithon@gmail.com. Our technical team will assist you with the submission
+                                    process. Make sure to report issues well before the deadline.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact-section reveal">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Still Have Questions?</h2>
+                <p class="contact-description">
+                    Can't find the answer you're looking for? Feel free to reach out to our team for any additional
+                    queries.
+                </p>
+                <div class="contact-buttons">
+                    <a href="mailto:smartaithon@gmail.com" class="contact-btn">
+                        📧 Email Us
+                    </a>
+                    <a href="contact.html" class="contact-btn">
+                        📞 Contact Page
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Organized By</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank">
+                            IEEE KCE SB CIS CHAPTER
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <h3>Initiative by</h3>
+                    <ul>
+                        <li><a href="https://smartcities.ieee.org/" target="_blank">
+                                IEEE Smart Cities
+                            </a></li>
+                    </ul>
+            </div>
+            <div class="footer-section">
+                <h3>AI Infrastructure Partner</h3>
+                <ul>
+                    <li>
+                        <a href="https://featherless.ai/" target="_blank">
+                            Featherless
+                        </a>
+                    </li>
+                </ul>
+                <h3>Community Partner</h3>
+
+                <ul>
+                    <li>
+                        <a href="https://ulockai.netlify.app/" target="_blank">
+                            ULockAI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://eventopia.in/" target="_blank">
+                            Eventopia
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:smartaithon@gmail.com">smartaithon@gmail.com</a></li>
+                </ul>
+                <div class="social-links">
+
+                    <a href="https://wa.me/919488722837" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/ieeekcesb" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/ieee-kce-sb" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+                    </a>
+
+                    <a href="mailto:smartaithon@gmail.com" class="social-link" aria-label="Email">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+                    </a>
+
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="themes.html">Themes</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SmartAIthon. All rights reserved. | Designed by <a
+                    href="https://www.linkedin.com/in/gokulnathad1827/" target="_blank" rel="noopener noreferrer"
+                    style="color: inherit; text-decoration: none;">GOKULNATH D</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Animation
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.opacity = '0';
+                setTimeout(function () {
+                    document.getElementById('loader').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function () {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Clear any stored theme data
+        localStorage.removeItem('theme');
+
+        // Active Navigation Link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+
+        // FAQ Accordion Functionality
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', function () {
+                const isActive = item.classList.contains('active');
+
+                // Close all other items in the same category
+                const category = item.parentElement;
+                const categoryItems = category.querySelectorAll('.faq-item');
+                categoryItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+
+                // Toggle current item
+                item.classList.toggle('active');
+                question.setAttribute('aria-expanded', item.classList.contains('active'));
+            });
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('searchInput');
+        const faqContainer = document.getElementById('faqContainer');
+
+        searchInput.addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            const categories = document.querySelectorAll('.faq-category');
+
+            if (searchTerm === '') {
+                // Show all items and categories
+                faqItems.forEach(item => {
+                    item.style.display = 'block';
+                    item.classList.remove('highlight');
+                    item.classList.remove('active');
+                });
+                categories.forEach(category => {
+                    category.style.display = 'block';
+                });
+                return;
+            }
+
+            let hasResults = false;
+
+            categories.forEach(category => {
+                let categoryHasResults = false;
+                const categoryItems = category.querySelectorAll('.faq-item');
+
+                categoryItems.forEach(item => {
+                    const question = item.querySelector('h3').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        item.classList.add('highlight');
+                        categoryHasResults = true;
+                        hasResults = true;
+                    } else {
+                        item.style.display = 'none';
+                        item.classList.remove('highlight');
+                    }
+                });
+
+                category.style.display = categoryHasResults ? 'block' : 'none';
+            });
+
+            // Show "no results" message if needed
+            if (!hasResults && searchTerm !== '') {
+                if (!document.querySelector('.no-results')) {
+                    const noResults = document.createElement('div');
+                    noResults.className = 'no-results';
+                    noResults.style.cssText = `
+                        text-align: center;
+                        padding: 40px;
+                        color: var(--dark-gray);
+                        font-size: 1.1rem;
+                    `;
+                    noResults.innerHTML = `
+                        <h3 style="margin-bottom: 10px;">No Results Found</h3>
+                        <p>Try searching with different keywords or browse the questions above.</p>
+                    `;
+                    faqContainer.appendChild(noResults);
+                }
+            } else {
+                const noResults = document.querySelector('.no-results');
+                if (noResults) {
+                    noResults.remove();
+                }
+            }
+        });
+
+        // Scroll Reveal Animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add keyboard navigation
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                // Close all FAQ items
+                faqItems.forEach(item => {
+                    item.classList.remove('active');
+                });
+            }
+        });
+
+        // Expand/Collapse All functionality
+        function toggleAll(expand = true) {
+            faqItems.forEach(item => {
+                if (expand) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        }
+
+        // Add expand/collapse all buttons (optional)
+        const controls = document.createElement('div');
+        controls.style.cssText = `
+            text-align: center;
+            margin-bottom: 30px;
+        `;
+        controls.innerHTML = `
+            <button onclick="toggleAll(true)" style="margin-right: 10px; padding: 10px 20px; border: none; border-radius: 20px; background: var(--primary); color: white; cursor: pointer;">Expand All</button>
+            <button onclick="toggleAll(false)" style="padding: 10px 20px; border: none; border-radius: 20px; background: var(--accent); color: white; cursor: pointer;">Collapse All</button>
+        `;
+        faqContainer.insertBefore(controls, faqContainer.firstChild);
+
+        // Analytics for FAQ interactions
+        faqItems.forEach((item, index) => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', function () {
+                // Track FAQ interaction (for analytics)
+                console.log(`FAQ ${index + 1} clicked:`, item.querySelector('h3').textContent);
+
+                // Store in localStorage for user preferences
+                const clickedFAQs = JSON.parse(localStorage.getItem('clickedFAQs') || '[]');
+                if (!clickedFAQs.includes(index)) {
+                    clickedFAQs.push(index);
+                    localStorage.setItem('clickedFAQs', JSON.stringify(clickedFAQs));
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 50);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.faq-category').forEach(category => {
+            category.style.opacity = '0';
+            category.style.transform = 'translateY(30px)';
+            category.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(category);
+        });
+
+    </script>
+    <!-- Shared Navbar Script -->
+    <script src="navbar.js"></script>
+</body>
+
+</html>
